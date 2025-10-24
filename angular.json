@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-social-newworks": {
+    "project--sociak-networks": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "project-social-newworks:build:production"
+              "buildTarget": "project--sociak-networks:build:production"
             },
             "development": {
-              "buildTarget": "project-social-newworks:build:development"
+              "buildTarget": "project--sociak-networks:build:development"
             }
           },
           "defaultConfiguration": "development"
