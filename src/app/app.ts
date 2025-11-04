@@ -9,5 +9,5 @@ import { ProfileCard } from './common-ui/profile-card/profile-card';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('project--sociak-networks');
+  protected readonly title = signal('project--social-networks');
 }
