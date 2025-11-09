@@ -7,9 +7,9 @@
 }
 
 body {
+  font-family: 'JetBrains Mono', sans-serif;
   background-color: var(--dark-color);
   color: var(--light-color);
-  font-family: 'JetBrains Mono';
 }
 
 h2,
@@ -17,7 +17,7 @@ p {
   margin: 0;
 }
 
-h2 {
+.h6 {
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
@@ -40,7 +40,6 @@ span {
   line-height: 16px;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  margin-right: 4px;
 }
 
 .btn {
