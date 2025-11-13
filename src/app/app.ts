@@ -1,13 +1,12 @@
 import { Component, inject, signal } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
-import { JsonPipe } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 import { ProfileCard } from './common-ui/profile-card/profile-card';
 import { ProfileInter } from './data/interfaces/profile.interface';
 import { Profile } from './data/services/profile';
 
 @Component({
   selector: 'app-root',
-  imports: [ProfileCard, JsonPipe],
+  imports: [ProfileCard, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
