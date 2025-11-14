@@ -5,7 +5,7 @@ import { ProfileInter } from './../interfaces/profile.interface';
 @Injectable({
   providedIn: 'root',
 })
-export class Profile {
+export class ProfileService {
   http = inject(HttpClient);
   baseApiUrl = 'https://icherniakov.ru/yt-course/';
 

@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProfileCard } from './common-ui/profile-card/profile-card';
 import { ProfileInter } from './data/interfaces/profile.interface';
-import { Profile } from './data/services/profile';
+import { ProfileService } from './data/services/profile';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ import { Profile } from './data/services/profile';
 })
 export class App {
   protected readonly title = signal('project--social-networks');
-  profileService = inject(Profile);
+  profileService = inject(ProfileService);
 
   profiles: ProfileInter[] = [];
 
