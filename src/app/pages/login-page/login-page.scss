@@ -3,19 +3,12 @@
   align-items: center;
   justify-content: center;
   gap: 232px;
+  height: 100vh;
 }
 
 .login__img {
   width: 355px;
   height: 430px;
-}
-
-.login__h3 {
-  font-weight: 800;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 56px;
-  margin-bottom: 44px;
 }
 
 .login__container {
@@ -29,12 +22,15 @@
   font-style: normal;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 8px;
-  margin-top: 16px;
 }
 
 .login__input {
+  box-sizing: border-box;
   background-color: var(--dark-color);
   border: 1px solid var(--light-color);
-  padding: 20px 12px;
+  padding: 12px 20px;
+  width: 100%;
+  height: 44px;
+  color: var(--light-color);
+  margin-top: 8px;
 }
