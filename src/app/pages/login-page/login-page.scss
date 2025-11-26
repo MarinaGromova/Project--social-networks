@@ -25,6 +25,7 @@
 }
 
 .login__input {
+  font-family: 'JetBrains Mono', sans-serif;
   box-sizing: border-box;
   background-color: var(--dark-color);
   border: 1px solid var(--light-color);
@@ -33,4 +34,5 @@
   height: 44px;
   color: var(--light-color);
   margin-top: 8px;
+  border-radius: 2px;
 }

@@ -1,16 +1,26 @@
-<div>
-  <h1 class="h1 mg60">Вход</h1>
-  <form class="login__container" action="">
-    <label class="login__span">
-      Telegram username
-      <input class="login__input mg16" type="text" name="Логин" placeholder="Введите логин" />
-    </label>
-    <label class="login__span">
-      Пароль
-      <input class="login__input" type="text" name="Пароль" placeholder="Введите пароль" />
-    </label>
-    <button class="btn mg32 shadow">Войти</button>
-  </form>
-</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="login__container">
+  <h1 class="h1 mb60">Вход</h1>
+  <label class="login__span">
+    Telegram username
+    <input
+      formControlName="username"
+      class="login__input mb16"
+      type="text"
+      name="Логин"
+      placeholder="Введите логин"
+    />
+  </label>
+  <label class="login__span">
+    Пароль
+    <input
+      formControlName="password"
+      class="login__input"
+      type="text"
+      name="Пароль"
+      placeholder="Введите пароль"
+    />
+  </label>
+  <button type="submit" class="btn mt32 btn-shadow">Войти</button>
+</form>
 
 <img class="login__img" src="/assets/imgs/Content.svg" alt="Tik-Talk" />

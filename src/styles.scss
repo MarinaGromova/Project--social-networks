@@ -4,6 +4,7 @@
   --dark-color: #000;
   --light-color: #fff;
   --accent-color: #ae7aff;
+  --gray-color: #5f646d;
 }
 
 body {
@@ -64,20 +65,35 @@ span {
   border: none;
   color: var(--dark-color);
   width: 100%;
+  cursor: pointer;
 }
-.mg16 {
+
+.btn-shadow {
+  border: 1px solid var(--dark-color);
+  position: relative;
+  border-radius: 2px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 2px;
+    background: var(--gray-color);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.mb16 {
   margin-bottom: 16px;
 }
 
-.mg32 {
+.mt32 {
   margin-top: 32px;
 }
 
-.mg60 {
+.mb60 {
   margin-bottom: 60px;
-}
-
-.shadow {
-  border: 1px solid var(--dark-color);
-  box-shadow: 5px 5px 5px #5f646d;
 }
